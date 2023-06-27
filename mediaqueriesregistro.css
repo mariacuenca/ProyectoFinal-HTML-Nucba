@@ -1,0 +1,28 @@
+@media screen and (min-width: 300px) and (max-width: 480px){
+
+    main h2{
+        font-size: 1em;
+        padding: 5px;
+        margin: 15px;
+    }
+
+    label{
+       
+        font-size: 1em; 
+    }
+    
+    input{
+        font-size: 1em;
+        
+    }
+    
+    .form-registro{
+        padding: 10px 10px;}
+       
+
+    .btn-registro{
+        padding: 10px 10px;
+        font-size: 0.8em;
+        
+    }
+}

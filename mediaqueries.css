@@ -1,0 +1,203 @@
+@media only screen and (max-width:600px) {
+   .navbar{
+    position: relative;
+   }
+
+   .menu-bar{
+    display: block;
+    color: #e5b9a0;
+    font-size: 1.5em;
+    cursor: pointer;
+   }
+
+   .navbar-list{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #a0706c;
+    top: 5em;
+    left: 3em;
+    border-radius: 15px;
+   }
+
+   #menu-bar:checked ~ .navbar-list {
+    display: flex;
+   }
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px){
+
+   .navbar-list{
+      position: absolute;
+      width: 100%;
+      height: 80vh;
+      gap: 30px;
+      font-size: 1em;
+      top: 6em;
+      left: 1em;
+      font-size: 0.7em;}
+
+
+      .portada-info h1{
+         font-size: 2.5em;
+      }
+
+      .portada-info h3{
+         font-size: 1em;
+         
+      }
+
+      .portada-info p{
+         font-size: 0.8em;
+        
+      }
+
+      .boton-contacto{
+         font-size: 0.5em;
+         padding: 5px 10px;
+      }
+
+      .SN-info h2{
+         font-size: 1.3em;
+      }
+
+      .SN-info p{
+         font-size: 0.6em;
+      }
+
+      .fotos{
+       display: none;}
+
+       .container h1{
+         font-size: 1em;
+         margin-top: 15px;
+       }
+
+       .cards-container{
+         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+         margin-top: 50px;
+       }
+
+       .card{
+         padding: 5px 10px;
+       }
+
+       .card img{
+         height: 30px;
+       }
+
+       .card h3{
+         font-size: 0.5em;
+         padding: 2px 0;
+       }
+
+       .card p{
+         font-size: 0.5em;
+       }
+
+       .info-registro h3{
+         font-size: 1em;
+       }
+
+       .info-registro p{
+         font-size: 1em;
+         padding: 5px;
+       }
+
+       .boton-registro{
+         padding: 5px 10px;
+         margin-top: 5px;
+         font-size: 0.5em;
+         font-weight: 500;
+       }
+
+       .redes{
+         font-size: 0.8em;
+         margin-top: 10px;
+       }
+
+       .contacto img{
+         height: 5vh;
+       }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+
+   .portada-info h1{
+      font-size: 3.5em;
+   }
+   .SN-info h2{
+      font-size: 2em;
+   }
+
+   .SN-info p{
+      font-size: 1em;
+   }
+
+   .fotos{
+    display: none;}
+
+
+
+   .fotos{
+   display: none;}
+
+   .container h1{
+   font-size: 2em;
+   margin-top: 15px;
+   }
+
+   .cards-container{
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         margin-top: 50px;
+       }
+
+       .card{
+         padding: 5px 10px;
+       }
+
+       .card img{
+         height: 50px;
+       }
+
+       .card h3{
+         font-size: 1em;
+         padding: 2px 0;
+       }
+
+       .card p{
+         font-size: 0.6em;
+       }
+
+       .info-registro h3{
+         font-size: 1.5em;
+       }
+
+       .info-registro p{
+         font-size: 1em;
+         padding: 5px;
+       }
+
+       .boton-registro{
+         padding: 5px 10px;
+         margin-top: 5px;
+         font-size: 0.8em;
+         font-weight: 500;
+       }
+
+       .redes{
+         font-size: 1em;
+         margin-top: 10px;
+       }
+
+       .contacto img{
+         height: 8vh;
+       }
+
+}

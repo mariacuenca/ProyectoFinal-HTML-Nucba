@@ -1,0 +1,300 @@
+/*Navbar*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Manrope&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #875a59;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+.navbar-list{
+    grid-column: 5/10;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navbar-list li{
+    list-style: none;
+}
+
+.navbar-list a{
+    text-decoration: none;
+    color: #e5b9a0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar-list a:hover{
+    color: whitesmoke;
+}
+
+
+.navbar-list li:first-child > a{
+    font-weight: 800;
+}
+
+.navbar-list span{
+    background-color: #a47c6c;
+    padding: 15px 30px;
+    border-radius: 15px;  
+}
+
+/*Menu Hamburguesa*/
+
+.menu-bar{
+    display: none;
+    grid-column: 9/10;
+    grid-row: 1/2;
+}
+
+#menu-bar{
+    display: none;
+}
+
+
+
+/*PORTADA*/ 
+
+.portada{
+    height: 80vh;
+    background-image:  linear-gradient(rgba(16,16,16, .2 ),rgba(16,16,16, .1 )),url(./imagenes/portada.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.portada-info{
+    grid-column: 2/8;
+    grid-row: 4/8;
+    
+}
+
+.portada-info h1{
+    color: #4c242c;
+    font-family: 'Manrope', sans-serif;
+    font-size: 5em;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.portada-info h3{
+    color: #875a59;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2em;
+}
+
+.portada-info p{
+    color: #4c242c;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.boton-contacto{
+    font-family: 'Manrope', sans-serif;
+    background: #a47c6c;
+    color: #e5b9a0;
+    padding: 10px 20px;
+    border: 1.5px solid #e5b9a0; 
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 500;  
+}
+
+.boton-contacto:hover{
+    background-color: #e5b9a0;
+    color:#4c242c;
+    transform: scale(1.03);
+}
+
+/*SOBRE NOSOTROS*/
+
+.sobre-nosotros{
+    height: 80vh;
+    background-color: #e5b9a0;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.SN-info{
+    grid-column: 3/9;
+    grid-row: 2/8;
+}
+
+.SN-info h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5em;
+    color: #875a59;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+}
+
+.SN-info p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    color: #a47c6c;
+    font-weight: 500;    
+}
+
+.SN-info span{
+    color: #4c242c;
+}
+.fotos{
+    display: grid;
+    gap: 15px;
+}
+
+.fotos img{
+    display: flex;
+    height: 15vh;
+    grid-row: 2/8;
+    margin-top: 40px;
+    border-radius: 15px;
+    background:#875a59;
+    border: 4px solid #875a59; 
+    background-size: cover;
+    max-width: 100%;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+/* CARDS SERVICIOS */
+
+.container{
+    background:#a47c6c;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    height: 80vh;
+}
+
+.container h1{
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5em;
+    margin-top: 35px;
+    color: #e5b9a0;
+}
+
+.cards-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+margin-top: 100px;
+gap: 20px
+}
+
+.card{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: #e5b9a0;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.card img{
+    height: 80px;
+}
+
+.card h3{
+    color:#4c242c;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.card p{
+    color:#875a59;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+.card:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+.registro{
+    background:#e5b9a0;
+    padding: 15px ;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+
+}
+
+.info-registro{
+    
+    grid-column: 2/8 ;
+}
+
+.info-registro h3{
+    font-size: 3em;
+    font-family: 'Manrope', sans-serif;
+    color: #875a59;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.info-registro p{
+    font-size: 2em;
+    font-family: 'Manrope', sans-serif;
+    color: #a47c6c;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.boton-registro{
+    font-family: 'Manrope', sans-serif;
+    background: #a47c6c;
+    color: #e5b9a0;
+    padding: 10px 20px;
+    border: 1.5px solid #875a59 ; 
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.boton-registro:hover{
+    background-color: #4c242c;
+    transform: scale(1.03);
+}
+
+.redes{
+    font-size: 1.5em;
+    font-family: 'Manrope', sans-serif;
+    color: #875a59;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    margin-top: 40px;
+}
+
+.contacto img{
+    height: 10vh;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    
+}

@@ -1,0 +1,72 @@
+/*REGISTRO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Manrope&display=swap');
+
+main{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 1200vh;
+    background-image:  linear-gradient(rgba(16,16,16, .2 ),rgba(16,16,16, .1 )),url(./imagenes/portada.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5em;
+    color:#4c242c;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    text-align: center;
+    margin: 50px;
+    padding: 15px;
+}
+
+.form-registro{
+    align-items: center;
+    justify-content: center;
+    background-color:#e5b9a0;
+    padding: 80px 70px;
+    border: #a47c6c solid 0.5em;
+    border-radius: 30px;  
+}
+
+label{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #4c242c;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+input{
+    border: 0.1em solid #4c242c;
+    border-radius: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    gap: 15px;
+
+}
+
+.btn-registro{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #875a59;
+    font-family: 'Manrope', sans-serif;
+    color: #e5b9a0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.btn-registro:hover{
+    color: #4c242c;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+
+}

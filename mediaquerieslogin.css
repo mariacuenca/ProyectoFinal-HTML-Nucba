@@ -1,0 +1,22 @@
+@media screen and (min-width: 300px) and (max-width: 480px){
+    #pag-login h2{
+        font-size:2em;
+    }
+
+    .form-login{
+        padding: 40px 30px;
+    }
+       
+    label{
+        font-size: 1em;
+    }
+
+    input{
+        font-size: 1em;}
+
+    .btn-registro{  
+     font-size: 0.7em;
+     } 
+      
+}
+
